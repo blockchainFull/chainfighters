@@ -1,0 +1,327 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*******************
+*    For Header   *
+******************/
+
+@font-face {
+  font-family: twop;
+  src: url(../src/assets/2P.ttf);
+}
+
+header {
+  background-image: url('../src/assets/Dusk\ animation.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  align-items: center;
+
+  .title-bar {
+    display: flex;
+    margin-top: 22px;
+    margin-left: 32%;
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 36%;
+    height: 30px;
+
+    align-items:center;
+    justify-content:center;
+
+    a{
+      color: #FFFFFF;
+      font: 12px twop;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+  }
+
+  .chain-fighters {
+    height: auto;
+    width: 26%;
+    margin-left: -20%;
+
+    @media (max-width: 768px) {
+      width: 30%;
+      margin-left: 0;
+      margin-top: 100px;
+    }
+  }
+
+  .left-img {
+    height: 70px;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .connect-bar {
+    position: absolute;
+    
+    margin-top: 25px;
+    margin-left: 70%;
+    width: 12%;
+    height: 28px;
+  
+    border: 2px solid white;
+    border-radius: 5px;
+    
+    span {
+      font: 10px twop;
+    }
+  }
+
+  nav {
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(180deg, black, transparant);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  img {
+    margin: 10px;
+    height: 50px;
+    width: auto;/*maintain aspect ratio*/
+  }
+
+  span {
+    font: 12px twop;
+    color: white;
+  }
+
+  .mint-count {
+    display: flex;
+    margin: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  
+    .mint-box {
+      width: 33%;
+      padding: 0px;
+      height : 100%;
+      line-height: 100px;
+      
+      span {
+        display : inline-block;
+        vertical-align : middle;
+        line-height : 20px;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  
+    .field {
+      color: black;
+      background-color: white;
+      border-radius: 15px;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 20px;
+    }
+  
+    .mint-button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .mint-black {
+      margin-top: -20px;
+      width: 150px;
+      height: auto;
+      
+      margin-left: auto;
+      margin-right: auto;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  
+    img {
+      width: auto;
+      height: 50px;
+    }
+  }
+}
+
+footer {
+  background: white;  
+
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 10px;
+  height: 56px;
+  
+  font: 10px twop;
+}
+
+.fighters {
+  background-image: linear-gradient(to right, #413b63, #675e7d, #24365b);
+
+  background-color: white;
+
+  width: 100%;
+
+  font-family: twop;
+  color: white;
+
+  .contain {
+    background-image: linear-gradient(180deg,#241f42 3%,rgba(7,17,33,0) 20%);
+
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    .row {
+      position: relative;
+      text-align: left;
+      justify-content: center;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 150px;
+
+      .text {
+        margin-top: 50px;
+        background-color: rgba(255,255,255,0.22);
+        padding: 10px;
+        line-height: 1.8;
+
+        &.purple {
+          padding: 50px;
+          background-color: rgba(131,0,233,0.13);
+          max-height: 440px;
+          text-align: right;
+        }
+      }
+      .img-box {
+        border: 2px solid white;
+        aspect-ratio: auto 640 / 640;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .heading {
+        text-align: center;
+        width: 80%;
+        font-size: 40px;
+
+        &.right {
+          text-align: right;
+        }
+      }
+      .punch-img {
+        margin: 30px;
+        display: flex;
+        width: 320px;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .gif-punch {
+        margin-top: 30px;
+        aspect-ratio: auto 640 / 640;
+        width: 100%;
+      }
+      .query-box {
+        border: 2px solid white;
+        width: 80%;
+        padding: 20px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        p {
+          font-size: 16px;
+          margin: 0;
+        }
+        span {
+          font-size: 11px;
+        }
+      }
+      .team {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+          width: 100%;
+        }
+        &.twitter {
+          background-image: url('./assets/Logos/twitter.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 40px;
+          height: auto;
+        }
+      }
+    }
+
+    p {
+      font-size: 10px;
+      line-height: 2.5;
+    }
+  }
+}
+
+.gray {
+  color: gray;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
