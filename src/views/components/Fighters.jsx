@@ -3,22 +3,19 @@ import punchgif from '../../assets/GIFs/Fighter Throwing Punches.gif'
 import meetimg from '../../assets/NEW Flickering Fighters GIF.gif'
 import chooseimg from '../../assets/GIFs/all-in-1.gif'
 import legendimg from '../../assets/marcelogzz21_LARGE-2.png'
-import img100 from '../../assets/Icons/100.png'
-import stakeimg from '../../assets/Buttons-Titles/button3.png'
+import image1 from '../../assets/phase1.png'
 import wagerimg from '../../assets/Buttons-Titles/button5.png'
 import dollarimg from '../../assets/Icons/money.png'
 import img2 from '../../assets/2.png'
 import sanjiimg from '../../assets/Sanji_LARGE-3.png'
 import trophyimg from '../../assets/Icons/Trophy.png'
-import boximg from '../../assets/Icons/box.png'
-import uploadimg from '../../assets/Icons/Upload.png'
-import arenaimg from '../../assets/Icons/Arena.png'
+import image4 from '../../assets/phase4.png'
 import mou from '../../assets/GIFs/Sanji.gif'
 import chainman from '../../assets/GIFs/Patrick.gif'
 import chelo from '../../assets/GIFs/Ninja.gif'
 import gandalf from '../../assets/GIFs/Gandy.gif'
 import twittericon from '../../assets/Logos/twitter.png'
-import grassimg from '../../assets/floating grass.png'
+import grassimg from '../../assets/Dusk Platform.png'
 
 import Querybox from './Querybox'
 
@@ -30,7 +27,7 @@ const Fighters = () => {
                 <div className="row">
                     <div className="col-xl-4 col-lg-4">
                         <h1>Meet The Fighters</h1>
-                        <div className="text" style={{fontSize:"14px"}}>4,444 of the universe’s most talented fighters have been sent to the Ethereum blockchain. All generated completely on chain and stored on IPFS.<br/><br/><br/>
+                        <div className="text meet">4,444 of the universe’s most talented fighters have been sent to the Ethereum blockchain. All generated completely on chain and stored on IPFS.<br/><br/><br/>
 Fighters were summoned as a response to the current state of play 2 earn gaming projects that prioritize ponzi-like game economies and disregard gameplay.</div>
                     </div>
                     <div className="col-xl-1 col-lg-1"></div>
@@ -39,14 +36,14 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                     </div>
                 </div>
                 <div className="row">
-                    <p className="heading">Enter the Arena and $PUNCH your way to glory</p>
+                    <div className="heading">Enter the Arena and $PUNCH your way to glory</div>
                     <div><img src={punch} className="punch-img"></img></div>
                     <div className="col-xl-3 col-lg-3">
-                        <div style={{fontSize:"20px",minHeight:"430px"}} className="text">Chain fighters grant holders many different perks. Main one being access to exclusive play 2 earn features in the companion platform fighting game releasing in the near future.</div>
+                        <div className="text punch">Chain fighters grant holders many different perks. Main one being access to exclusive play 2 earn features in the companion platform fighting game releasing in the near future.</div>
                     </div>
                     <div className="col-xl-3 col-lg-3"><img src={punchgif} className="gif-punch"></img></div>
                     <div className="col-xl-3 col-lg-3">
-                        <div style={{fontSize:"20px",minHeight:"430px"}} className="text">Earn the $PUNCH token by playing ranked playlists, winning tournaments, creating custom games and assets, as well as owning an Arena NFT.</div>
+                        <div className="text punch">Earn the $PUNCH token by playing ranked playlists, winning tournaments, creating custom games and assets, as well as owning an Arena NFT.</div>
                     </div>
                 </div>
                 <div className="row">
@@ -62,14 +59,14 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                 <div className="row">
                     <div className="col-xl-4 col-lg-4">
                         <h1>Become a Legend</h1>
-                        <div style={{fontSize:"17px"}} className="text">Place among the top fighters at the end of a ranked-play season and earn one of the Chain Legend NFTs.
+                        <div className="text legend">Place among the top fighters at the end of a ranked-play season and earn one of the Chain Legend NFTs.
                         <br/><br/>
                         -Earn a large share of game revenue
                         <br/><br/>
                         -Access to Legends verified chat
                         <br/><br/>
                         -Exclusive Airdrops
-                    </div>
+                        </div>
                     </div>
                     <div className="col-xl-1 col-lg-1"></div>
                     <div className="col-xl-4 col-lg-4">
@@ -77,7 +74,7 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                     </div>
                 </div>
                 <div className="row">
-                    <p className="heading">Roadmap</p>
+                    <p className="heading roadmap">Roadmap</p>
                     <div className="col-xl-4 col-lg-4">
                         <h3 className="left">Phase 1: Fighters Launch</h3>
                         <p>. Fighters sell out: Fighters sell out 100%
@@ -86,12 +83,8 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                         <br/>. Begin Full swing game development: Game development efforts are accelerated</p>
                     </div>
                     <div className="col-xl-1 col-lg-1"></div>
-                    <div className="col-xl-2 col-lg-2">
-                        <img src={stakeimg} style={{width:"60%",marginTop:"30%"}}/>
-                    </div>
-                    <div className="col-xl-2 col-lg-2">
-                        <img src={img100} width="100%"/>
-                        <img src={dollarimg} width="50%"/>
+                    <div className="col-xl-4 col-lg-4">
+                        <img src={image1}/>
                     </div>
                 </div>
                 <div className="row">
@@ -124,14 +117,10 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-xl-2 col-lg-2">
-                        <img src={boximg} style={{width:"60%"}}/>
+                    <div className="col-xl-4 col-lg-4">
+                        <img src={image4}/>
                     </div>
-                    <div className="col-xl-2 col-lg-2">
-                        <img src={uploadimg} width="60%"/>
-                        <img src={arenaimg} style={{width:"60%"}}/>
-                    </div>
-                    <div className="col-xl-1 col-lg-1"></div>
+                    <div className="col-xl-2 col-lg-2"></div>
                     <div className="col-xl-4 col-lg-4">
                         <h3 className="left">Phase 4: Chain Fighters Game Launch</h3>
                         <p>. Official game launch: Full free-to-play game release for everyone.
@@ -155,32 +144,32 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                 <div className="row">
                     <div className="heading">Team and Collaborators</div>
                     <div className="team">
-                        <div className="col-xl-2 col-lg-2">
+                        <div className="character-box">
                             <h3>Mou</h3>
                             <img src={mou}></img>
-                            <img src={grassimg}></img>
+                            <img src={grassimg} className="grass-img"></img>
                             <h5>Team Lead</h5>
                         </div>
-                        <div className="col-xl-2 col-lg-2"></div>
-                        <div className="col-xl-2 col-lg-2">
+                        <div className="character-space"></div>
+                        <div className="character-box">
                             <h3>CHELO</h3>
                             <img src={chelo}></img>
-                            <img src={grassimg}></img>
-                            <h5>Game Design Lead</h5>
+                            <img src={grassimg} className="grass-img"></img>
+                            <h5 className="text-nowrap">Game Design Lead</h5>
                         </div>
                     </div>
                     <div className="team">
-                        <div className="col-xl-2 col-lg-2">
+                        <div className="character-box">
                             <h3>Gandalf</h3>
                             <img src={gandalf}></img>
-                            <img src={grassimg}></img>
+                            <img src={grassimg} className="grass-img"></img>
                             <h5>Art</h5>
                         </div>
-                        <div className="col-xl-2 col-lg-2"></div>
-                        <div className="col-xl-2 col-lg-2">
+                        <div className="character-space"></div>
+                        <div className="character-box">
                             <h3>ChainMan</h3>
                             <img src={chainman}></img>
-                            <img src={grassimg}></img>
+                            <img src={grassimg} className="grass-img"></img>
                             <h5>Lead Dev</h5>
                         </div>
                     </div>
