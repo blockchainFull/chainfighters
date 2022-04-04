@@ -6,7 +6,7 @@ import legendimg from '../../assets/marcelogzz21_LARGE-2.png'
 import image1 from '../../assets/phase1.png'
 import wagerimg from '../../assets/Buttons-Titles/button5.png'
 import dollarimg from '../../assets/Icons/money.png'
-import img2 from '../../assets/2.png'
+import img2 from '../../assets/phase2.png'
 import sanjiimg from '../../assets/Sanji_LARGE-3.png'
 import trophyimg from '../../assets/Icons/Trophy.png'
 import image4 from '../../assets/phase4.png'
@@ -68,7 +68,7 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                         -Exclusive Airdrops
                         </div>
                     </div>
-                    <div className="col-xl-1 col-lg-1"></div>
+                    <div className="col-xl-2 col-lg-2"></div>
                     <div className="col-xl-4 col-lg-4">
                         <img src={legendimg} className="img-box"></img>
                     </div>
@@ -87,12 +87,9 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                         <img src={image1}/>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-xl-2 col-lg-2">
-                        <img src={img2} style={{width:"100%"}} />
-                    </div>
-                    <div className="col-xl-2 col-lg-2">
-                        <img src={wagerimg} style={{width:"50%"}}/>
+                <div className="row box">
+                    <div className="col-xl-4 col-lg-4">
+                        <img src={img2}/>
                     </div>
                     <div className="col-xl-4 col-lg-4">
                         <h3 className="left">Phase 2: Initial Dapp release and Chain Fighters Pre-Release</h3>
@@ -101,7 +98,7 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                         <br/>. 3D Voxel airdrop: Each fighter will receive their own unique 3D Voxel character for use in the SandBox and other metaverses.</p>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row box">
                     <div className="col-xl-4 col-lg-4">
                         <h3 className="left">Phase 3: Full Dapp Release</h3>
                         <p>. Beta Launch: Beta version of the game will be released, allowing all fighter holders to start playing.
@@ -116,7 +113,7 @@ Fighters were summoned as a response to the current state of play 2 earn gaming 
                         <img src={trophyimg} width="100%"/>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row box">
                     <div className="col-xl-4 col-lg-4">
                         <img src={image4}/>
                     </div>

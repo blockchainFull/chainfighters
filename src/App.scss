@@ -51,8 +51,9 @@ header {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 800px;
+  height: auto;
   align-items: center;
+  aspect-ratio: auto 1920 / 1080;
 
   .title-bar {
     display: flex;
@@ -223,6 +224,10 @@ footer {
     height: 100%;
     padding-top: 200px;
 
+    @media (min-width: 1900px) {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
     .row {
       position: relative;
       text-align: left;
@@ -231,6 +236,9 @@ footer {
       padding-top: 20px;
       padding-bottom: 150px;
 
+      &.box {
+        margin-top: -100px;
+      }
       h3 {
         font-size: 23px;
       }
